@@ -275,7 +275,10 @@ const OpenAccount = props => {
     <div>
       <ol className="breadcrumb">
         <li className="breadcrumb-item active">
-          <Link to="open-account">Open Account</Link>
+          <Link to="open-account">Dashboard</Link>
+        </li>
+        <li className="breadcrumb-item ">
+          <Link to="open-account">check Status</Link>
         </li>
       </ol>
 
@@ -283,15 +286,9 @@ const OpenAccount = props => {
 
 
 
-
-
-
-
-
-
       {/* register */}
 
-      <div className="card card-register  mt-5">
+      <div className="card card-register ">
         <div className="card-body">
 
           <form>

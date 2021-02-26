@@ -7,6 +7,7 @@ import {Route,Switch} from 'react-router-dom';
 import OpenAccount from './Container/OpenAccount';
 import React,{useState} from 'react';
 import AccountStatus from './Container/AccountStatus';
+import Register from './Container/Register';
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
               <Route path="/" exact component={Dashboard} />
               <Route path="/open-account" component={OpenAccount} />
               <Route path="/account-status" component={AccountStatus} />
+              <Route path="/register" component={Register} />
               </Switch>
             </div>
             <Footer />
