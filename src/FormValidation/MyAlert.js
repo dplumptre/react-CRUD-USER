@@ -9,7 +9,7 @@ const MyAlert = props => {
     if (props.error.length > 1) {
         // if error is more than 1 that means
         // theres error show it
-        res = (<div style={{ color: 'red', fontSize: 12 }}>
+        res = (<div  style={{ color: 'red', fontSize: 12 }}>
             {props.error}
         </div>)
     }

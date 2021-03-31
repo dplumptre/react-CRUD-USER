@@ -2,6 +2,9 @@ import React from 'react';
 import {Link} from 'react-router-dom';
 
 const Dashboard = props => {
+
+
+
     return (<div>
                 <ol className="breadcrumb">
                     <li className="breadcrumb-item active">Dashboard</li>
@@ -43,9 +46,7 @@ const Dashboard = props => {
             <div className="card-header">
                 <i className="fas fa-chart-area"></i>
                    Welcome</div>
-            <div className="card-body">
-                hello
-      </div>
+
         </div>
     </div>)
 }
