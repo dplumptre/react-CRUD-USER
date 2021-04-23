@@ -10,6 +10,7 @@ import registerReducer from "./reducers/Register";
 import accountReducer from "./reducers/Account";
 import getAccountReducer from "./reducers/GetAccount";
 import accountStatusReducer from "./reducers/AccountStatus";
+import authReducer from "./reducers/Auth";
 import { watcherSaga } from "./sagas/index";
 const sagaMiddleware = createSagaMiddleware();
 
@@ -23,19 +24,12 @@ const store = configureStore({
 		registerReducer: registerReducer,
 		accountStatusReducer: accountStatusReducer,
 		accountReducer: accountReducer,
-		getAccountReducer:getAccountReducer
-		
-
+		getAccountReducer: getAccountReducer,
+		authReducer: authReducer,
 	},
 	middleware: [...getDefaultMiddleware({ thunk: false }), sagaMiddleware],
 });
 
 sagaMiddleware.run(watcherSaga);
-
-
-
-
-
-
 
 export default store;
